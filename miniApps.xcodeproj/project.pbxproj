@@ -9,19 +9,26 @@
 /* Begin PBXBuildFile section */
 		522D0A392C88B6EA0028527D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D0A382C88B6EA0028527D /* AppDelegate.swift */; };
 		522D0A3B2C88B6EA0028527D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D0A3A2C88B6EA0028527D /* SceneDelegate.swift */; };
-		522D0A3D2C88B6EA0028527D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D0A3C2C88B6EA0028527D /* ViewController.swift */; };
+		522D0A3D2C88B6EA0028527D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D0A3C2C88B6EA0028527D /* MainViewController.swift */; };
 		522D0A422C88B6EB0028527D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522D0A412C88B6EB0028527D /* Assets.xcassets */; };
 		522D0A452C88B6EB0028527D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 522D0A442C88B6EB0028527D /* Base */; };
+		522D0A4D2C88C1790028527D /* MiniAppType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D0A4C2C88C1790028527D /* MiniAppType.swift */; };
+		522D0A692C8987140028527D /* CurrencyPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 522D0A682C8987140028527D /* CurrencyPackage */; };
+		522D0A6C2C89C24D0028527D /* FastPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 522D0A6B2C89C24D0028527D /* FastPackage */; };
+		522D0A702C89E42B0028527D /* CurrencyPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 522D0A6F2C89E42B0028527D /* CurrencyPackage */; };
+		522D0A752C89F3B50028527D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522D0A742C89F3B50028527D /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		522D0A352C88B6EA0028527D /* miniApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		522D0A382C88B6EA0028527D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		522D0A3A2C88B6EA0028527D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		522D0A3C2C88B6EA0028527D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		522D0A3C2C88B6EA0028527D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		522D0A412C88B6EB0028527D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522D0A442C88B6EB0028527D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		522D0A462C88B6EB0028527D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522D0A4C2C88C1790028527D /* MiniAppType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppType.swift; sourceTree = "<group>"; };
+		522D0A742C89F3B50028527D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				522D0A692C8987140028527D /* CurrencyPackage in Frameworks */,
+				522D0A702C89E42B0028527D /* CurrencyPackage in Frameworks */,
+				522D0A6C2C89C24D0028527D /* FastPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +64,64 @@
 		522D0A372C88B6EA0028527D /* miniApps */ = {
 			isa = PBXGroup;
 			children = (
-				522D0A382C88B6EA0028527D /* AppDelegate.swift */,
-				522D0A3A2C88B6EA0028527D /* SceneDelegate.swift */,
-				522D0A3C2C88B6EA0028527D /* ViewController.swift */,
-				522D0A412C88B6EB0028527D /* Assets.xcassets */,
-				522D0A432C88B6EB0028527D /* LaunchScreen.storyboard */,
-				522D0A462C88B6EB0028527D /* Info.plist */,
+				522D0A6D2C89CA2A0028527D /* Application */,
+				522D0A722C89F28F0028527D /* Modules */,
+				522D0A712C89F2140028527D /* Supporting */,
 			);
 			path = miniApps;
+			sourceTree = "<group>";
+		};
+		522D0A6D2C89CA2A0028527D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				522D0A3A2C88B6EA0028527D /* SceneDelegate.swift */,
+				522D0A382C88B6EA0028527D /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		522D0A712C89F2140028527D /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				522D0A462C88B6EB0028527D /* Info.plist */,
+				522D0A432C88B6EB0028527D /* LaunchScreen.storyboard */,
+				522D0A412C88B6EB0028527D /* Assets.xcassets */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		522D0A722C89F28F0028527D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				522D0A772C89F5480028527D /* Model */,
+				522D0A762C89F3D70028527D /* View */,
+				522D0A732C89F3A00028527D /* ViewModel */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		522D0A732C89F3A00028527D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				522D0A742C89F3B50028527D /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		522D0A762C89F3D70028527D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				522D0A3C2C88B6EA0028527D /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		522D0A772C89F5480028527D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				522D0A4C2C88C1790028527D /* MiniAppType.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,6 +140,11 @@
 			dependencies = (
 			);
 			name = miniApps;
+			packageProductDependencies = (
+				522D0A682C8987140028527D /* CurrencyPackage */,
+				522D0A6B2C89C24D0028527D /* FastPackage */,
+				522D0A6F2C89E42B0028527D /* CurrencyPackage */,
+			);
 			productName = miniApps;
 			productReference = 522D0A352C88B6EA0028527D /* miniApps.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +173,10 @@
 				Base,
 			);
 			mainGroup = 522D0A2C2C88B6EA0028527D;
+			packageReferences = (
+				522D0A6A2C89C24D0028527D /* XCRemoteSwiftPackageReference "FastPackage" */,
+				522D0A6E2C89E42B0028527D /* XCRemoteSwiftPackageReference "OneSPM" */,
+			);
 			productRefGroup = 522D0A362C88B6EA0028527D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,7 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				522D0A3D2C88B6EA0028527D /* ViewController.swift in Sources */,
+				522D0A752C89F3B50028527D /* MainViewModel.swift in Sources */,
+				522D0A4D2C88C1790028527D /* MiniAppType.swift in Sources */,
+				522D0A3D2C88B6EA0028527D /* MainViewController.swift in Sources */,
 				522D0A392C88B6EA0028527D /* AppDelegate.swift in Sources */,
 				522D0A3B2C88B6EA0028527D /* SceneDelegate.swift in Sources */,
 			);
@@ -282,11 +353,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 36R3TYQTT7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = miniApps/Info.plist;
+				INFOPLIST_FILE = miniApps/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,6 +365,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = identifier.miniApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,11 +384,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 36R3TYQTT7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = miniApps/Info.plist;
+				INFOPLIST_FILE = miniApps/Supporting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +396,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = identifier.miniApps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -349,6 +428,42 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		522D0A6A2C89C24D0028527D /* XCRemoteSwiftPackageReference "FastPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Croleack/FastPackage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+		522D0A6E2C89E42B0028527D /* XCRemoteSwiftPackageReference "OneSPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Croleack/OneSPM.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		522D0A682C8987140028527D /* CurrencyPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CurrencyPackage;
+		};
+		522D0A6B2C89C24D0028527D /* FastPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 522D0A6A2C89C24D0028527D /* XCRemoteSwiftPackageReference "FastPackage" */;
+			productName = FastPackage;
+		};
+		522D0A6F2C89E42B0028527D /* CurrencyPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 522D0A6E2C89E42B0028527D /* XCRemoteSwiftPackageReference "OneSPM" */;
+			productName = CurrencyPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 522D0A2D2C88B6EA0028527D /* Project object */;
 }
