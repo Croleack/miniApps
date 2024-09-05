@@ -1,0 +1,24 @@
+{
+  "originHash" : "afefb78633ba915f524bd0c05878c8aecfaa88f7523bedc0ed2fdd3cd3f44e92",
+  "pins" : [
+    {
+      "identity" : "fastpackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Croleack/FastPackage.git",
+      "state" : {
+        "revision" : "5c435f344b821feccb0fc3643f5e3b96e62c56c8",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "onespm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Croleack/OneSPM.git",
+      "state" : {
+        "revision" : "632aac36ff6140596265c96bc997b40e697add0a",
+        "version" : "1.0.7"
+      }
+    }
+  ],
+  "version" : 3
+}
